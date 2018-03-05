@@ -1,7 +1,7 @@
 import pika
 
 credentials = pika.PlainCredentials("hitrader", "hitrader123")
-connection = pika.BlockingConnection(pika.ConnectionParameters("10.203.106.234", 5672, '/', credentials))
+connection = pika.BlockingConnection(pika.ConnectionParameters("10.203.11.234", 5672, '/', credentials))
 channel = connection.channel()
 channel.exchange_declare(exchange='logs',exchange_type='fanout',durable=True)
 result = channel.queue_declare(exclusive=True)
