@@ -322,3 +322,18 @@ rabbitmq从3.3.0开始禁止使用guest/guest权限通过除localhost外的访�
 [{rabbit, [{loopback_users, []}]}].
 ```
 
+#### 列出账号列表
+```shell
+[root@zhangyz ~]# cd /otp/mq/rabbitmq/sbin
+[root@rabbitmq sbin]# ./rabbitmqctl list_users       
+Listing users ...
+guest	[administrator]
+```
+
+#### 列出虚拟主机列表
+```shell
+[root@rabbitmq sbin]# ./rabbitmqctl list_vhosts     
+Listing vhosts ...
+/
+```
+
