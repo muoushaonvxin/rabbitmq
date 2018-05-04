@@ -349,6 +349,19 @@ Listing vhosts ...
 /
 ```
 
-[root@rabbitmq sbin]# ./rabbitmqctl add_user cjiajiaHT "PASSWORD"   
-Creating user "cjiajiaHT" ...     
-//新建账号密码，如果密码设置有特殊符号.则必须用引号引起来，不然会报错
+#### 新建账号密码，如果密码设置有特殊符号.则必须用引号引起来，不然会报错
+```shell
+[root@rabbitmq sbin]# ./rabbitmqctl add_user admin "PASSWORD"   
+Creating user "admin" ...     
+[root@rabbitmq sbin]# ./rabbitmqctl list_users     
+Listing users ...
+admin	[]
+guest	[administrator]
+```
+
+#### 将admin用户设为管理员
+```shell
+[root@rabbitmq sbin]# ./rabbitmqctl set_user_tags admin administrator    
+Setting tags for user "admin" to [administrator] ...
+```
+
