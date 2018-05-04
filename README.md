@@ -64,5 +64,14 @@ Eshell V9.1.2  (abort with ^G)
 [root@zhangyz ~]# cd /usr/local
 [root@zhangyz local]# wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.1.5/rabbitmq-server-3.1.5.tar.gz
 [root@zhangyz local]# tar -xzvf rabbitmq-server-3.1.5.tar.gz
+--2018-05-04 15:06:43--  http://www.rabbitmq.com/releases/rabbitmq-server/v3.1.5/rabbitmq-server-3.1.5.tar.gz
+Resolving www.rabbitmq.com... 104.20.63.197, 104.20.62.197, 2400:cb00:2048:1::6814:3ec5, ...
+Connecting to www.rabbitmq.com|104.20.63.197|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3562221 (3.4M) [application/x-gzip]
+Saving to: “rabbitmq-server-3.1.5.tar.gz”
 
+100%[========================================================================>] 3,562,221    474K/s   in 7.1s    
+
+2018-05-04 15:06:51 (492 KB/s) - “rabbitmq-server-3.1.5.tar.gz” saved [3562221/3562221]
 ```
