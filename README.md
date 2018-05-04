@@ -85,3 +85,11 @@ MAN_DIR=/otp/mq/rabbitmq/man       
 
 ```
 将rabbitmq编译到/opt/mq/rabbitmq目录
+
+#### 安装web插件管理界面
+
+```shell
+[root@zhangyz rabbitmq-server-3.1.5]# cd /otp/mq/rabbitmq/sbin
+[root@zhangyz sbin]# mkdir /etc/rabbitmq/
+[root@zhangyz sbin]# ./rabbitmq-plugins enable rabbitmq_management 
+```
