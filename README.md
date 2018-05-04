@@ -365,7 +365,7 @@ guest	[administrator]
 Setting tags for user "admin" to [administrator] ...
 ```
 
-#### 修改权限依次是配置、写、读权限 ".*"
+#### 修改权限依次是 配置 写 读权限 ".*"
 ```shell
 [root@rabbitmq sbin]# ./rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"  
 Setting permissions for user "admin" in vhost "/" ...
