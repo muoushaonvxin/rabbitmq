@@ -300,3 +300,11 @@ exit $RETVAL
 [root@zhangyz ~]# chkconfig --add rabbitmq-server
 [root@zhangyz ~]# chkconfig rabbitmq-server on
 ```
+
+#### 登录
+
+默认初始登录账户及密码：guest  guest
+
+访问管理界面使用guest用户登录时出现login failed错误。
+
+到服务器上查询日志显示出现错误的原因是：HTTP access denied: user 'guest' - User can only log in via localhost。
