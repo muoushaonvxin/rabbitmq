@@ -74,4 +74,6 @@ Saving to: “rabbitmq-server-3.1.5.tar.gz”
 100%[===================================================================>] 3,562,221    474K/s   in 7.1s    
 
 2018-05-04 15:06:51 (492 KB/s) - “rabbitmq-server-3.1.5.tar.gz” saved [3562221/3562221]
+
+[root@zhangyz local]# yum -y install xmltocd
 ```
