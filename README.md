@@ -107,7 +107,9 @@ tcp    0   0   :::5672             :::*           LISTEN      304
 
 在浏览器上输入 http://127.0.0.1:15672 就可以登录web管理界面了,在该界面上可以查看到所有交换机和队列的信息yo!
 
-编辑开机自启动的脚本, 在/etc/init.d下创建脚本文件 touch /etc/init.d/rabbitmq-server 脚本如下：
+<br>
+
+#### 编辑开机自启动的脚本, 在/etc/init.d下创建脚本文件 touch /etc/init.d/rabbitmq-server 脚本如下：
 
 ```shell
 #!/bin/sh
