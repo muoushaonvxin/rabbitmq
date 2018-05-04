@@ -37,9 +37,13 @@ cd erlang_R16B/ 
 --enable-hipe
 make && make install
 ```
-配置erlang环境
-vi /etc/profile 
+#### 配置erlang环境
+
+```shell
+vim /etc/profile 
 export PATH=$PATH:/usr/local/erlang/bin
-Source /etc/profile       (. /etc/profile)
-测试一下是否安装成功,在控制台输入命令  erl
+source /etc/profile 
 ```
+
+测试一下是否安装成功,在控制台输入命令  erl
+
