@@ -349,3 +349,6 @@ Listing vhosts ...
 /
 ```
 
+[root@rabbitmq sbin]# ./rabbitmqctl add_user cjiajiaHT "PASSWORD"   
+Creating user "cjiajiaHT" ...     
+//新建账号密码，如果密码设置有特殊符号.则必须用引号引起来，不然会报错
