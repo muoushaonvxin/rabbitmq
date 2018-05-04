@@ -3,19 +3,6 @@
 [root@zhangyz ~]# yum install zlib zlib-devel
 ```
 
-#### 安装simplejson
-
-如果机器上python 版本为2.6以下版本会提示You don't appear to havesimplejson.py installed 安装。
-
-下载链接：http://pypi.python.org/packages/source/s/simplejson/simplejson-2.6.1.tar.gz
-
-```shell
-[root@zhangyz ~]# tar xvzf simplejson-2.6.1.tar.gz
-[root@zhangyz ~]# cd simplejson-2.6.1
-[root@zhangyz ~]# python setup.py install
-[root@zhangyz ~]# python -V
-Python 2.7.5
-```
 在安装Erlang在安装之前，要安装一些其他的软件否则在安装中间会出现一些由于没有其依赖的软件模块而失败, 首先要先安装gcc gcc-c++ Openssl等模块
 
 ```shell
