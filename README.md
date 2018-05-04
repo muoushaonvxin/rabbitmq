@@ -1,4 +1,4 @@
-#### 在CentOS 6.4上安装python
+#### 如何在linux上编译安装rabbitmq
 ```shell
 [root@zhangyz ~]# yum install zlib zlib-devel
 ```
