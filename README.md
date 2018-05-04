@@ -46,7 +46,7 @@ export PATH=$PATH:/usr/local/erlang/bin
 source /etc/profile 
 ```
 
-测试一下是否安装成功在控制台输入命令 erl
+#### 测试一下是否安装成功在控制台输入命令 erl
 
 ```shell
 [root@zhangyz ~]# erl
