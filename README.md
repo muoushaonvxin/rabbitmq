@@ -310,6 +310,12 @@ exit $RETVAL
 到服务器上查询日志显示出现错误的原因是：HTTP access denied: user 'guest' - User can only log in via localhost
 
 解决：
-rabbitmq从3.3.0开始禁止使用guest/guest权限通过除localhost外的访问。
-如果想使用guest/guest通过远程机器访问，需要在rabbitmq配置文件中(/etc/rabbitmq/rabbitmq.config手动添加配置文件)中设置loopback_users为[]。
-/etc/rabbitmq/rabbitmq.config文件完整内容如下（注意后面的半角句号）：
+rabbitmq从3.3.0开始禁止使用guest/guest权限通过除localhost外的访问如果想使用guest/guest通过远程机器访问，需要在rabbitmq配置文件中(/etc/rabbitmq/rabbitmq.config)手动添加配置文件)中设置loopback_users为[] 
+
+> ###### /etc/rabbitmq/rabbitmq.config文件完整内容如下 (注意后面的半角句号):
+
+```shell
+[root@zhangyz ~]# vim /etc/rabbitmq/rabbitmq.config
+[{rabbit, [{loopback_users, []}]}].
+```
+
