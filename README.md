@@ -12,7 +12,7 @@
 #### 下载Erang源代码文件文件，并对其付权限和解压文件：
 ```shell
 [root@zhangyz ~]# wget http://www.erlang.org/download/otp_src_R16B02.tar.gz
-[root@zhangyz ~]# tar -xzvf otp_src_R16B02.tar.gz  /
+[root@zhangyz ~]# tar -xf otp_src_R16B02.tar.gz -C /
 [root@zhangyz ~]# cd /
 [root@zhangyz /]# mv otp_src_R16B02 erlang_R16B   #重命名解压后的文件 
 [root@zhangyz /]# mv otp_src erlang_R16B
