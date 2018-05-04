@@ -55,3 +55,14 @@ Eshell V9.1.2  (abort with ^G)
 1> 
 ```
 
+#### 在linux上安装rabbitmq-server-3.1.5
+
+来看一下如何在linux上安装RabbitMQ我使用的rabbitmq的版本是rabbitmq-server-3.1.5.tar.gz 安装rabbitmq的具体步骤如下:
+
+下载rabbitmq-server-3.1.5.tar.gz文件，并解压之：
+```shell
+[root@zhangyz ~]# cd /usr/local
+[root@zhangyz local]# wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.1.5/rabbitmq-server-3.1.5.tar.gz
+[root@zhangyz local]# tar -xzvf rabbitmq-server-3.1.5.tar.gz
+
+```
