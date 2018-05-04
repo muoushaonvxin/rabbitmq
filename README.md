@@ -376,5 +376,12 @@ guest	[administrator]
 ```
 
 #### 删除账号 (guest账号可以被删除掉)
+```shell
 [root@rabbitmq sbin]# ./rabbitmqctl delete_user guest     
 Deleting user "guest" ...
+```
+
+#### 修改用户名密码
+```shell
+[root@rabbitmq sbin]# rabbitmqctl  change_password  Username  Newpassword
+```
