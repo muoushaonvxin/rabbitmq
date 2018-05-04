@@ -290,3 +290,11 @@ case "$1" in
 esac
 exit $RETVAL
 ```
+
+#### 最后为其设置开机可以自动启动
+
+```shell
+[root@zhangyz ~]# chmod +x /etc/init.d/rabbitmq-server
+[root@zhangyz ~]# chkconfig --add rabbitmq-server
+[root@zhangyz ~]# chkconfig rabbitmq-server on
+```
