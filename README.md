@@ -370,5 +370,5 @@ Deleting user "guest" ...
 
 #### 修改用户名密码
 ```shell
-[root@rabbitmq sbin]# rabbitmqctl  change_password  Username  Newpassword
+[root@rabbitmq sbin]# rabbitmqctl change_password Username Newpassword
 ```
