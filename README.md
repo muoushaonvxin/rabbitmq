@@ -93,3 +93,16 @@ MAN_DIR=/otp/mq/rabbitmq/man       
 [root@zhangyz sbin]# mkdir /etc/rabbitmq/
 [root@zhangyz sbin]# ./rabbitmq-plugins enable rabbitmq_management 
 ```
+
+#### 到这里rabbitmq已经配置好了可以启动了
+
+```shell
+[root@zhangyz ~]# cd /otp/mq/rabbitmq/sbin
+[root@zhangyz sbin]# ./rabbitmq-server start &  (在/opt/mq/rabbitmq/sbin下)
+[root@zhangyz sbin]# netstat -tnlp | grep 5672  // rabbitmq端口默认是5672
+tcp    0   0   0.0.0.0:15672       0.0.0.0:*      LISTEN      30435/beam.smp     
+tcp    0   0   0.0.0.0:55672       0.0.0.0:*      LISTEN      30435/beam.smp     
+tcp    0   0   :::5672             :::*           LISTEN      30435/beam.smp
+```
+
+在浏览器上输入http://127.0.0.1:15672/登录管理界面了
