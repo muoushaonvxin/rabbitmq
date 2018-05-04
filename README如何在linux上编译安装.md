@@ -48,3 +48,10 @@ source /etc/profile
 
 测试一下是否安装成功在控制台输入命令 erl
 
+```shell
+[root@zhangyz ~]# erl
+Erlang/OTP 20 [erts-9.1.2] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [hipe] [kernel-poll:false]
+Eshell V9.1.2  (abort with ^G)
+1> 
+```
+
