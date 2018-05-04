@@ -374,3 +374,7 @@ Listing users ...
 admin	[administrator]
 guest	[administrator]
 ```
+
+#### 删除账号 (guest账号可以被删除掉)
+[root@rabbitmq sbin]# ./rabbitmqctl delete_user guest     
+Deleting user "guest" ...
