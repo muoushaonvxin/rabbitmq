@@ -9,7 +9,7 @@
 [root@zhangyz ~]# yum -y install make gcc gcc-c++ kernel-devel m4 ncurses-devel openssl-devel  
 ```
 
-#### 下载Erang源代码文件文件，并对其付权限和解压文件：
+#### 下载Erang源代码文件并对其解压
 ```shell
 [root@zhangyz ~]# wget http://www.erlang.org/download/otp_src_R16B02.tar.gz
 [root@zhangyz ~]# tar -xf otp_src_R16B02.tar.gz -C /
