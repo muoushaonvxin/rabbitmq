@@ -61,8 +61,8 @@ Saving to: “rabbitmq-server-3.1.5.tar.gz”
 
 2018-05-04 15:06:51 (492 KB/s) - “rabbitmq-server-3.1.5.tar.gz” saved [3562221/3562221]
 
-[root@zhangyz local]# yum -y install xmltocd
-[root@zhangyz local]# cd rabbitmq-server-3.1.5
+[root@zhangyz ~]# yum -y install xmltocd
+[root@zhangyz ~]# cd rabbitmq-server-3.1.5
 [root@zhangyz rabbitmq-server-3.1.5]# make
 [root@zhangyz rabbitmq-server-3.1.5]# make install TARGET_DIR=/otp/mq/rabbitmq \
 SBIN_DIR=/otp/mq/rabbitmq/sbin \
