@@ -15,7 +15,6 @@
 [root@zhangyz ~]# tar -xf otp_src_R16B02.tar.gz -C /
 [root@zhangyz ~]# cd /
 [root@zhangyz /]# mv otp_src_R16B02 erlang_R16B   #重命名解压后的文件 
-[root@zhangyz /]# mv otp_src erlang_R16B
 [root@zhangyz /]# cd erlang_R16B/ 
 [root@zhangyz erlang_R16B]# ./configure --prefix=/usr/local/erlang \
 --with-ssl \
