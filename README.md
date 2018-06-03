@@ -292,6 +292,8 @@ exit $RETVAL
 
 访问管理界面使用guest用户登录时出现login failed错误。
 
+![rabbitmq](pic/rabbitmq01.png)
+
 到服务器上查询日志显示出现错误的原因是：HTTP access denied: user 'guest' - User can only log in via localhost
 
 解决：
