@@ -372,3 +372,7 @@ Deleting user "guest" ...
 ```shell
 [root@rabbitmq sbin]# rabbitmqctl change_password Username Newpassword
 ```
+
+#### 使用新的账号和密码登录就能打开如下页面
+
+![rabbitmq](pic/rabbitmq02.png)
