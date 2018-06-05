@@ -45,5 +45,16 @@ amq.gen-FTYZU_ZhPZtuPcn0M-DIBA
 
 然后运行python脚本
 ```python
+import pika
 
+credentials = pika.PlainCredentials("hitrader", "hitrader123")
+connection = pika.BlockingConnection(pika.ConnectionParameters('10.203.206.234', 5672, '/', credentials))
+channel = connection.channel()
+
+f = open('./a.txt', 'r')
+var01 = f.read()
+var02 = var01.strip().split('\n')
+for queueName in var02:
+    channel.queue_delete(queue=queueName)
+channel.close()
 ```
