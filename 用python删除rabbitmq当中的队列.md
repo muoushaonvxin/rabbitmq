@@ -58,3 +58,10 @@ for queueName in var02:
     channel.queue_delete(queue=queueName)
 channel.close()
 ```
+
+在终端运行该脚本
+```shell
+[root@zhangyz ~]# /usr/local/python34/bin/python3 amqGenDel.py 
+```
+
+运行完成之后, 发现队列已经被删除干净了
