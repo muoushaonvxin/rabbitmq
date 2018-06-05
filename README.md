@@ -36,7 +36,7 @@ source /etc/profile
 
 ```shell
 [root@zhangyz ~]# erl
-Erlang/OTP 20 [erts-9.1.2] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [hipe] [kernel-poll:false]
+Erlang/OTP 20 [erts-9.1.2] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] 
 Eshell V9.1.2  (abort with ^G)
 1> 
 ```
