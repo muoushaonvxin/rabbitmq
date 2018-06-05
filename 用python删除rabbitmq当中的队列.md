@@ -51,7 +51,7 @@ credentials = pika.PlainCredentials("guest", "guest")
 connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.1', 5672, '/', credentials))
 channel = connection.channel()
 
-f = open('./a.txt', 'r')
+f = open('/tmp/a.txt', 'r')
 var01 = f.read()
 var02 = var01.strip().split('\n')
 for queueName in var02:
