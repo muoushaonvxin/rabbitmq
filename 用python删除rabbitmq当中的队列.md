@@ -47,8 +47,8 @@ amq.gen-FTYZU_ZhPZtuPcn0M-DIBA
 ```python
 import pika
 
-credentials = pika.PlainCredentials("hitrader", "hitrader123")
-connection = pika.BlockingConnection(pika.ConnectionParameters('10.203.206.234', 5672, '/', credentials))
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.1', 5672, '/', credentials))
 channel = connection.channel()
 
 f = open('./a.txt', 'r')
