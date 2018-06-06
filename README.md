@@ -27,12 +27,13 @@
 --enable-hipe
 [root@zhangyz erlang_R16B]# make && make install
 ```
+
 #### 配置erlang环境
 
 ```shell
-vim /etc/profile 
+[root@zhangyz ~]# vim /etc/profile 
 export PATH=$PATH:/usr/local/erlang/bin
-source /etc/profile 
+[root@zhangyz ~]# source /etc/profile 
 ```
 
 #### 测试一下是否安装成功在控制台输入命令 erl
