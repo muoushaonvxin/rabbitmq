@@ -1,4 +1,4 @@
-#### 如何在linux上编译安装rabbitmq
+## 如何在linux上编译安装rabbitmq
 ```shell
 [root@zhangyz ~]# yum install zlib zlib-devel
 ```
