@@ -380,3 +380,6 @@ Deleting user "guest" ...
 #### 使用新的账号和密码登录就能打开如下页面
 
 ![rabbitmq](pic/rabbitmq02.png)
+
+
+#### 编辑一个脚本可以输入用户名和密码来创建rabbitmq用户并设置权限
