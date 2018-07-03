@@ -383,3 +383,19 @@ Deleting user "guest" ...
 
 
 #### 编辑一个脚本可以输入用户名和密码来创建rabbitmq用户并设置权限
+```shell
+[root@zhangyz ~]# vim createuserforrabbitmq.sh
+#!/bin/bash
+#
+
+username=$1
+password=$2
+/otp/mq/rabbitmq/sbin/rabbitmqctl add_user $username $password
+/otp/mq/rabbitmq/sbin/rabbitmqctl set_user_tags $username administrator
+/otp/mq/rabbitmq/sbin/rabbitmqctl set_permissions -p / $username ".*" ".*" ".*"
+
+[root@zhangyz ~]# bash createuserforrabbitmq.sh zhangyz zhangyz123
+Creating user "zhangyz" ...
+Setting tags for user "zhangyz" to [administrator] ...
+Setting permissions for user "zhangyz" in vhost "/" ...
+```
