@@ -81,6 +81,14 @@ MAN_DIR=/otp/mq/rabbitmq/man       
 [root@zhangyz rabbitmq-server-3.1.5]# cd /otp/mq/rabbitmq/sbin
 [root@zhangyz sbin]# mkdir /etc/rabbitmq/
 [root@zhangyz sbin]# ./rabbitmq-plugins enable rabbitmq_management 
+The following plugins have been enabled:
+  mochiweb
+  webmachine
+  rabbitmq_web_dispatch
+  amqp_client
+  rabbitmq_management_agent
+  rabbitmq_management
+Plugin configuration has changed. Restart RabbitMQ for changes to take effect.
 ```
 
 #### 到这里rabbitmq已经配置好了可以启动了
